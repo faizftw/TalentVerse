@@ -1,0 +1,164 @@
+@import 'tailwindcss';
+
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+/* ============================================
+   TALENT VERSE — Custom Theme & Animations
+   ============================================ */
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --color-tv-dark: #0a0a1a;
+    --color-tv-darker: #050510;
+    --color-tv-card: rgba(255, 255, 255, 0.04);
+    --color-tv-card-border: rgba(255, 255, 255, 0.08);
+    --color-tv-violet: #8b5cf6;
+    --color-tv-violet-light: #a78bfa;
+    --color-tv-indigo: #6366f1;
+    --color-tv-cyan: #22d3ee;
+    --color-tv-cyan-dark: #06b6d4;
+    --color-tv-text: #e2e8f0;
+    --color-tv-text-muted: #94a3b8;
+
+    --animate-fade-in-up: fade-in-up 0.8s ease-out both;
+    --animate-fade-in-left: fade-in-left 0.8s ease-out both;
+    --animate-fade-in-right: fade-in-right 0.8s ease-out both;
+    --animate-float: float 6s ease-in-out infinite;
+    --animate-pulse-glow: pulse-glow 3s ease-in-out infinite;
+    --animate-spin-slow: spin 20s linear infinite;
+    --animate-gradient-shift: gradient-shift 8s ease infinite;
+}
+
+/* ----- Keyframes ----- */
+
+@keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in-left {
+    from { opacity: 0; transform: translateX(-30px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes fade-in-right {
+    from { opacity: 0; transform: translateX(30px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-20px); }
+}
+@keyframes pulse-glow {
+    0%, 100% { opacity: 0.4; }
+    50%      { opacity: 0.8; }
+}
+@keyframes gradient-shift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ----- Glass Card ----- */
+
+.glass-card {
+    background: var(--color-tv-card);
+    border: 1px solid var(--color-tv-card-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(139, 92, 246, 0.3);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.12);
+}
+
+/* ----- CTA Gradient Button ----- */
+
+.btn-gradient {
+    background: linear-gradient(135deg, var(--color-tv-violet), var(--color-tv-indigo));
+    background-size: 200% 200%;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+.btn-gradient::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, var(--color-tv-violet), var(--color-tv-cyan), var(--color-tv-indigo));
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    filter: blur(12px);
+}
+.btn-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.4);
+}
+.btn-gradient:hover::after {
+    opacity: 1;
+}
+
+/* ----- Secondary (Ghost) Button ----- */
+
+.btn-ghost {
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    transition: all 0.3s ease;
+}
+.btn-ghost:hover {
+    background: rgba(139, 92, 246, 0.12);
+    border-color: var(--color-tv-violet);
+    transform: translateY(-2px);
+}
+
+/* ----- Step Number Badge ----- */
+
+.step-number {
+    background: linear-gradient(135deg, var(--color-tv-violet), var(--color-tv-indigo));
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: white;
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+}
+
+/* ----- Fingerprint Hero Graphic (SVG glow) ----- */
+
+.fingerprint-glow {
+    filter: drop-shadow(0 0 40px rgba(139, 92, 246, 0.35)) drop-shadow(0 0 80px rgba(99, 102, 241, 0.2));
+}
+
+/* ----- Section Divider Gradient Line ----- */
+
+.section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.3), transparent);
+}
+
+/* ----- Scroll-triggered animation helper ----- */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ----- Smooth Scrolling ----- */
+
+html {
+    scroll-behavior: smooth;
+}
