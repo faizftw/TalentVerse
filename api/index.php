@@ -1,12 +1,24 @@
 <?php
 
+use Illuminate\Http\Request;
+
+define('LARAVEL_START', microtime(true));
+
+// Determine if the application is in maintenance mode...
+if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
+    require $maintenance;
+}
+
+// Register the Composer autoloader...
 require __DIR__ . '/../vendor/autoload.php';
 
+// Bootstrap Laravel and handle the request...
 $app = require_once __DIR__ . '/../bootstrap/app.php';
 
 // Vercel serverless functions have a read-only filesystem except for /tmp.
 // We must set the storage path to /tmp/storage so Laravel can write cache, views, and logs.
-$app->useStoragePath($_ENV['APP_STORAGE'] ?? '/tmp/storage');
+$storagePath = $_ENV['APP_STORAGE'] ?? '/tmp/storage';
+$app->useStoragePath($storagePath);
 
 $directories = [
     $app->storagePath('framework/cache/data'),
@@ -25,4 +37,4 @@ foreach ($directories as $directory) {
 putenv('VIEW_COMPILED_PATH=' . $app->storagePath('framework/views'));
 $_ENV['VIEW_COMPILED_PATH'] = $app->storagePath('framework/views');
 
-require __DIR__ . '/../public/index.php';
+$app->handleRequest(Request::capture());
