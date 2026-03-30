@@ -78,9 +78,9 @@
                 <div class="absolute w-80 h-80 lg:w-[420px] lg:h-[420px] rounded-full border border-tv-violet/10 animate-spin-slow"></div>
                 <div class="absolute w-64 h-64 lg:w-[340px] lg:h-[340px] rounded-full border border-tv-indigo/10 animate-spin-slow" style="animation-direction: reverse; animation-duration: 15s;"></div>
 
-                {{-- Central Fingerprint SVG --}}
+                {{-- Central Fingerprint SVG (Bootstrap Icons bi-fingerprint) --}}
                 <div class="relative fingerprint-glow animate-float">
-                    <svg viewBox="0 0 200 200" class="w-56 h-56 lg:w-72 lg:h-72" xmlns="http://www.w3.org/2000/svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="w-56 h-56 lg:w-72 lg:h-72">
                         <defs>
                             <linearGradient id="fpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                                 <stop offset="0%" style="stop-color:#8b5cf6"/>
@@ -88,28 +88,21 @@
                                 <stop offset="100%" style="stop-color:#22d3ee"/>
                             </linearGradient>
                         </defs>
-                        {{-- Fingerprint paths --}}
-                        <g fill="none" stroke="url(#fpGrad)" stroke-width="2" stroke-linecap="round" opacity="0.9">
-                            <path d="M100,30 C60,30 35,60 35,100 C35,140 60,170 100,170 C140,170 165,140 165,100" />
-                            <path d="M100,42 C67,42 47,67 47,100 C47,133 67,158 100,158 C133,158 153,133 153,100" />
-                            <path d="M100,54 C74,54 59,74 59,100 C59,126 74,146 100,146 C126,146 141,126 141,100" />
-                            <path d="M100,66 C81,66 71,81 71,100 C71,119 81,134 100,134 C119,134 129,119 129,100" />
-                            <path d="M100,78 C88,78 83,88 83,100 C83,112 88,122 100,122 C112,122 117,112 117,100" />
-                            <path d="M100,88 C94,88 91,94 91,100 C91,106 94,112 100,112" />
-                            {{-- Cross lines for realism --}}
-                            <path d="M68,60 C78,55 90,52 100,54" opacity="0.5"/>
-                            <path d="M132,60 C122,55 110,52 100,54" opacity="0.5"/>
-                            <path d="M55,85 C60,75 70,68 82,65" opacity="0.4"/>
-                            <path d="M145,85 C140,75 130,68 118,65" opacity="0.4"/>
-                            <path d="M50,110 C53,120 60,130 72,138" opacity="0.4"/>
-                            <path d="M150,110 C147,120 140,130 128,138" opacity="0.4"/>
+                        <g fill="url(#fpGrad)">
+                            <path d="M8.06 6.5a.5.5 0 0 1 .5.5v.776a11.5 11.5 0 0 1-.552 3.519l-1.331 4.14a.5.5 0 0 1-.952-.305l1.33-4.141a10.5 10.5 0 0 0 .504-3.213V7a.5.5 0 0 1 .5-.5Z"/>
+                            <path d="M6.06 7a2 2 0 1 1 4 0 .5.5 0 1 1-1 0 1 1 0 1 0-2 0v.332q0 .613-.066 1.221A.5.5 0 0 1 6 8.447q.06-.555.06-1.115zm3.509 1a.5.5 0 0 1 .487.513 11.5 11.5 0 0 1-.587 3.339l-1.266 3.8a.5.5 0 0 1-.949-.317l1.267-3.8a10.5 10.5 0 0 0 .535-3.048A.5.5 0 0 1 9.569 8m-3.356 2.115a.5.5 0 0 1 .33.626L5.24 14.939a.5.5 0 1 1-.955-.296l1.303-4.199a.5.5 0 0 1 .625-.329"/>
+                            <path d="M4.759 5.833A3.501 3.501 0 0 1 11.559 7a.5.5 0 0 1-1 0 2.5 2.5 0 0 0-4.857-.833.5.5 0 1 1-.943-.334m.3 1.67a.5.5 0 0 1 .449.546 10.7 10.7 0 0 1-.4 2.031l-1.222 4.072a.5.5 0 1 1-.958-.287L4.15 9.793a9.7 9.7 0 0 0 .363-1.842.5.5 0 0 1 .546-.449Zm6 .647a.5.5 0 0 1 .5.5c0 1.28-.213 2.552-.632 3.762l-1.09 3.145a.5.5 0 0 1-.944-.327l1.089-3.145c.382-1.105.578-2.266.578-3.435a.5.5 0 0 1 .5-.5Z"/>
+                            <path d="M3.902 4.222a5 5 0 0 1 5.202-2.113.5.5 0 0 1-.208.979 4 4 0 0 0-4.163 1.69.5.5 0 0 1-.831-.556m6.72-.955a.5.5 0 0 1 .705-.052A4.99 4.99 0 0 1 13.059 7v1.5a.5.5 0 1 1-1 0V7a3.99 3.99 0 0 0-1.386-3.028.5.5 0 0 1-.051-.705M3.68 5.842a.5.5 0 0 1 .422.568q-.044.289-.044.59c0 .71-.1 1.417-.298 2.1l-1.14 3.923a.5.5 0 1 1-.96-.279L2.8 8.821A6.5 6.5 0 0 0 3.058 7q0-.375.054-.736a.5.5 0 0 1 .568-.422m8.882 3.66a.5.5 0 0 1 .456.54c-.084 1-.298 1.986-.64 2.934l-.744 2.068a.5.5 0 0 1-.941-.338l.745-2.07a10.5 10.5 0 0 0 .584-2.678.5.5 0 0 1 .54-.456"/>
+                            <path d="M4.81 1.37A6.5 6.5 0 0 1 14.56 7a.5.5 0 1 1-1 0 5.5 5.5 0 0 0-8.25-4.765.5.5 0 0 1-.5-.865m-.89 1.257a.5.5 0 0 1 .04.706A5.48 5.48 0 0 0 2.56 7a.5.5 0 0 1-1 0c0-1.664.626-3.184 1.655-4.333a.5.5 0 0 1 .706-.04ZM1.915 8.02a.5.5 0 0 1 .346.616l-.779 2.767a.5.5 0 1 1-.962-.27l.778-2.767a.5.5 0 0 1 .617-.346m12.15.481a.5.5 0 0 1 .49.51c-.03 1.499-.161 3.025-.727 4.533l-.07.187a.5.5 0 0 1-.936-.351l.07-.187c.506-1.35.634-2.74.663-4.202a.5.5 0 0 1 .51-.49"/>
                         </g>
-                        {{-- Center dot --}}
-                        <circle cx="100" cy="100" r="4" fill="url(#fpGrad)" opacity="0.8"/>
                         {{-- Scan line --}}
-                        <line x1="30" y1="100" x2="170" y2="100" stroke="#22d3ee" stroke-width="1" opacity="0.3">
-                            <animate attributeName="y1" values="30;170;30" dur="4s" repeatCount="indefinite"/>
-                            <animate attributeName="y2" values="30;170;30" dur="4s" repeatCount="indefinite"/>
+                        <line x1="0" y1="8" x2="16" y2="8" stroke="#22d3ee" stroke-width="0.15" opacity="0.4">
+                            <animate attributeName="y1" values="0;16;0" dur="4s" repeatCount="indefinite"/>
+                            <animate attributeName="y2" values="0;16;0" dur="4s" repeatCount="indefinite"/>
+                        </line>
+                        <line x1="0" y1="8" x2="16" y2="8" stroke="#22d3ee" stroke-width="0.5" opacity="0.1">
+                            <animate attributeName="y1" values="0;16;0" dur="4s" repeatCount="indefinite"/>
+                            <animate attributeName="y2" values="0;16;0" dur="4s" repeatCount="indefinite"/>
                         </line>
                     </svg>
                 </div>
