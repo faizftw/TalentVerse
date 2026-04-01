@@ -222,7 +222,7 @@
                     <div class="mb-4">
                         <span class="inline-block px-3 py-1 bg-white/5 border border-white/10 rounded text-xs font-semibold text-tv-text-muted mb-2">LEVEL 1</span>
                         <h4 class="text-xl font-bold text-white mb-1">TALENTVERSE ORIGIN</h4>
-                        <div class="text-xs font-medium text-tv-violet-light tracking-wide">Target: Bayi – SD <span class="mx-1">•</span> Fokus: Parenting & Foundation</div>
+                        <div class="text-xs font-medium text-tv-violet-light tracking-wide">Cocok untuk: Bayi – SD <span class="mx-1">•</span> Fokus: Parenting & Foundation</div>
                     </div>
                     <p class="text-sm text-tv-text-muted leading-relaxed mb-6 flex-grow">
                         Mengenali "cetak biru awal" anak untuk membangun pola asuh, komunikasi, dan metode belajar yang tepat sejak dini.
@@ -245,7 +245,7 @@
                     <div class="mb-4">
                         <span class="inline-block px-3 py-1 bg-tv-violet/20 border border-tv-violet/30 rounded text-xs font-semibold text-white mb-2">LEVEL 2</span>
                         <h4 class="text-xl font-bold text-white mb-1">TALENTVERSE VOYAGER</h4>
-                        <div class="text-xs font-medium text-tv-violet-light tracking-wide">Target: SMP – SMA <span class="mx-1">•</span> Fokus: Student & Future</div>
+                        <div class="text-xs font-medium text-tv-violet-light tracking-wide">Cocok untuk: SMP – SMA <span class="mx-1">•</span> Fokus: Student & Future</div>
                     </div>
                     <p class="text-sm text-tv-text-muted leading-relaxed mb-6 flex-grow">
                         Membantu peserta didik menyusun strategi belajar, ketahanan mental, dan eksplorasi arah masa depan secara sadar & realistis.
@@ -268,7 +268,7 @@
                     <div class="mb-4">
                         <span class="inline-block px-3 py-1 bg-white/5 border border-white/10 rounded text-xs font-semibold text-tv-text-muted mb-2">LEVEL 3</span>
                         <h4 class="text-xl font-bold text-white mb-1">TALENTVERSE PRIME</h4>
-                        <div class="text-xs font-medium text-tv-violet-light tracking-wide">Target: Mahasiswa/Pro <span class="mx-1">•</span> Fokus: Career & Wealth</div>
+                        <div class="text-xs font-medium text-tv-violet-light tracking-wide">Cocok untuk: Mahasiswa/Pro <span class="mx-1">•</span> Fokus: Career & Wealth</div>
                     </div>
                     <p class="text-sm text-tv-text-muted leading-relaxed mb-6 flex-grow">
                         Berfokus pada karier, kepemimpinan, pengambilan keputusan, dan penciptaan nilai ekonomi dalam konteks profesional.
