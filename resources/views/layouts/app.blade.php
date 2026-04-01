@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Talent Verse — Temukan potensi tersembunyi Anda melalui analisis kepribadian berbasis sidik jari. Eksplorasi diri dengan teknologi biometrik inovatif.">
-    <meta name="keywords" content="analisis sidik jari, kepribadian, biometrik, self-discovery, talent verse">
-    <title>@yield('title', 'Talent Verse — Eksplorasi Potensi Melalui Sidik Jari')</title>
+    <meta name="description" content="TalentVerse — Temukan potensi tersembunyi Anda melalui analisis kepribadian berbasis sidik jari. Eksplorasi diri dengan teknologi biometrik inovatif.">
+    <meta name="keywords" content="analisis sidik jari, kepribadian, biometrik, self-discovery, talentverse">
+    <title>@yield('title', 'TalentVerse — Eksplorasi Potensi Melalui Sidik Jari')</title>
 
     {{-- Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     {{-- Vite Assets --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
