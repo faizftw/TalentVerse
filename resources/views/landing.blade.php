@@ -214,8 +214,6 @@
 
         {{-- Product Levels --}}
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 relative">
-            {{-- Connector Line (desktop only) --}}
-            <div class="hidden md:block absolute top-16 left-[20%] right-[20%] h-[1px] bg-gradient-to-r from-tv-violet/30 via-tv-indigo/30 to-tv-cyan/30"></div>
 
             {{-- Level 1 --}}
             <div class="reveal text-center md:text-left" style="transition-delay: 0.1s;">
